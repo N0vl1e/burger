@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Занос</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/image/favicon-black.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html"><img src="assets/image/header/лого-1.png" alt="" class="logo"></a>
+            <nav class="header-menu">
+                <a href="index.html" class="a_active">главная</a>
+                <a href="#review">отзывы</a>
+                <a href="catalog.html">каталог</a>
+                <a href="#preim">о нас</a>
+            </nav>
+            <div class="header-links">
+                <a href="autorization.html"><img src="assets/image/header/лк.png" alt=""></a>
+                <a href="catalog.html" class="btn btn-red sleep-phone">забронировать</a>
+                <div class="burger">
+                    <input type="checkbox" id="burger">
+                    <label for="burger">
+                        <span></span>
+                    </label>
+                    <nav>
+                        <a href="#">главная</a>
+                        <a href="#">контакты</a>
+                        <a href="#">о нас</a>
+                        <a href="#">контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="container">
+            <section class="slider">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked />
+                    <input type="radio" name="r" id="r2" />
+                    <input type="radio" name="r" id="r3" />
+                    <input type="radio" name="r" id="r4" />
+
+                    <div class="slide sl1">
+                        <img src="assets/image/banner/image1.png" alt="" />
+                    </div>
+                    <div class="slide sl2">
+                        <img src="assets/image/banner/image2.png" alt="" />
+                    </div>
+                    <div class="slide sl3">
+                        <img src="assets/image/banner/image3.png" alt="" />
+                    </div>
+                    <div class="slide sl4">
+                        <img src="assets/image/banner/image4.png" alt="" />
+                    </div>
+                    <nav>
+                        <label for="r1"></label>
+                        <label for="r2"></label>
+                        <label for="r3"></label>
+                        <label for="r4"></label>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- preim -->
+    <div class="preim" id="preim">
+        <div class="container">
+            <div class="preim-block">
+                <h2>10<span>мин</span></h2>
+                <h3>Длительность заезда</h3>
+                <p>стандартная сессия, что<br> позволяет ощутить драйв без усталости.</p>
+            </div>
+            <div class="preim-block">
+                <h2>365<span>дней</span></h2>
+                <h3>Работает круглый год</h3>
+                <p>картинг-центры позволяют наслаждаться гонками в любое время года.</p>
+            </div>
+            <div class="preim-block">
+                <h2>60<span>км/ч</span></h2>
+                <h3>Скорость и адреналин</h3>
+                <p>возможность<br> разогнаться на безопасной трассе.</p>
+            </div>
+            <img src="assets/image/preim/cart.png" alt="">
+        </div>
+    </div>
+
+    <!-- catalog -->
+    <div class="catalog">
+        <div class="container">
+            <div class="catalog-title">
+                <h2>Каталог</h2>
+                <a href="catalog.html" class="btn btn-white">Подробнее</a>
+            </div>
+            <div class="catalog-block">
+                <div class="c-main-block">
+                    <div class="c-block">
+                        <div class="c-block-title">
+                            <h3>Индивидуальный заезд</h3>
+                        </div>
+                        <div class="c-block-main-text">
+                            <div class="c-block-text">
+                                <img src="assets/image/catalog/mingcute_time-line.png" alt="">
+                                <p>Время: 10 минут</p>
+                            </div>
+                            <div class="c-block-text">
+                                <img src="assets/image/catalog/fluent_coin-multiple-32-filled.png" alt="">
+                                <p>Цена: от 800 ₽</p>
+                            </div>
+                            <div class="c-block-text">
+                                <img src="assets/image/catalog/humbleicons_car.png" alt="">
+                                <p>Ощути скорость и драйв! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="other-btn btn-red">Забронировать</button>
+                </div>
+
+                <div class="c-main-block">
+                    <div class="c-block">
+                        <div class="c-block-title">
+                            <h3>Аренда трассы</h3>
+                        </div>
+                        <div class="c-block-main-text">
+                            <div class="c-block-text">
+                                <img src="assets/image/catalog/mingcute_time-line.png" alt="">
+                                <p>Время: 60 минут</p>
+                            </div>
+                            <div class="c-block-text">
+                                <img src="assets/image/catalog/fluent_coin-multiple-32-filled.png" alt="">
+                                <p>Цена: от 12 000 ₽</p>
+                            </div>
+                            <div class="c-block-text">
+                                <img src="assets/image/catalog/humbleicons_car.png" alt="">
+                                <p>Вся трасса только для вас!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="other-btn btn-red">Забронировать</button>
+                </div>
+
+                <div class="c-main-block sleep-pad">
+                    <div class="c-block">
+                        <div class="c-block-title">
+                            <h3>Аренда карта</h3>
+                        </div>
+                        <div class="c-block-main-text">
+                            <div class="c-block-text">
+                                <img src="assets/image/catalog/mingcute_time-line.png" alt="">
+                                <p>Время: 30-60 минут</p>
+                            </div>
+                            <div class="c-block-text">
+                                <img src="assets/image/catalog/fluent_coin-multiple-32-filled.png" alt="">
+                                <p>Цена: от 2 500 ₽</p>
+                            </div>
+                            <div class="c-block-text">
+                                <img src="assets/image/catalog/humbleicons_car.png" alt="">
+                                <p>Личный карт<br> без ограничений!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="other-btn btn-red">Забронировать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- review -->
+    <div class="review" id="review">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="review-block">
+                <img src="assets/image/review/bxs_up-arrow.png" alt="" class="left sleep-pad">
+                <div class="r-block">
+                    <div class="avatar">
+                        <img src="assets/image/review/image8.png" alt="">
+                    </div>
+                    <h3>Алексей, 28 лет.</h3>
+                    <div class="stars">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                    </div>
+                    <p>"Адреналин зашкаливает! Очень крутые карты, скорость ощущается мощно, но при этом безопасно.
+                        Трасса удобная, есть резкие
+                        повороты для дрифта. Отличное место для отдыха с друзьями!"</p>
+                </div>
+
+                <div class="r-block sleep-pad">
+                    <div class="avatar">
+                        <img src="assets/image/review/image49.png" alt="">
+                    </div>
+                    <h3>Марина, 25 лет.</h3>
+                    <div class="stars">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                    </div>
+                    <p>"Отличный картинг для всей семьи!" Приводили сына на детские заезды – инструкторы очень
+                        внимательные, экипировка
+                        удобная, карты настроены под детей. Муж тоже прокатился, остался в восторге! Теперь ходим всей
+                        семьей!</p>
+                </div>
+
+                <div class="r-block sleep-pad">
+                    <div class="avatar">
+                        <img src="assets/image/review/image9.png" alt="">
+                    </div>
+                    <h3>Дмитрий, 41 лет.</h3>
+                    <div class="stars">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                        <img src="assets/image/review/fire.png" alt="">
+                    </div>
+                    <p>"Хороший картинг, но хотелось бы подлиннее заезды" Всё понравилось – организация, сервис, машины.
+                        Единственное – 10
+                        минут пролетают очень быстро! Советую сразу брать несколько заездов, тогда кайф максимальный!
+                    </p>
+                </div>
+                <img src="assets/image/review/bxs_up-arrow.png" alt="" class="right sleep-pad">
+            </div>
+            <div class="review-post-block">
+                <div class="arrows">
+                    <img src="assets/image/review/bxs_up-arrow.png" alt="" class="left">
+                    <img src="assets/image/review/bxs_up-arrow.png" alt="" class="right">
+                </div>
+                <button class="btn btn-grey">оставить отзыв</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- subscribe -->
+    <div class="subscribe">
+        <div class="container">
+            <h2>Будь в курсе лучших предложений!</h2>
+            <div class="subscribe-block">
+                <input type="text" name="" id="" placeholder="Имя">
+                <input type="text" name="" id="" placeholder="Email">
+                <input type="submit" value="Подписаться">
+            </div>
+            <div class="subscribe-checkbox">
+                <input type="checkbox" name="" id="">
+                <p>согласен на обработку персональных данных</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- news -->
+    <div class="news">
+        <div class="container">
+            <div class="news-main-block">
+                <div class="first-grid-block">
+                    <div class="grid-block">
+                        <h3>Открытие нового сезона!</h3>
+                        <p>Готовы к новым рекордам? Мы открываем новый сезон гонок! Обновленная трасса, мощные карты и
+                            новые соревнования ждут вас.
+                            Забронируйте свой заезд и покажите, кто король скорости!</p>
+                        <div class="grid-links">
+                            <div class="grid-data">
+                                <img src="assets/image/news/calendar.png" alt="">
+                                <p>10 февраля 2025</p>
+                            </div>
+                            <button class="btn btn-red">записаться</button>
+                        </div>
+                    </div>
+                    <div class="grid-block sleep-pad">
+                        <h3>Турнир по картингу!</h3>
+                        <p>Готовьтесь к большому чемпионату картинг-центра! Участники соревнуются за кубок победителя и
+                            ценные призы. Формат:
+                            квалификация + финальная гонка. Успей подать заявку!</p>
+                        <div class="grid-links">
+                            <div class="grid-data">
+                                <img src="assets/image/news/calendar.png" alt="">
+                                <p>23 марта 2025</p>
+                            </div>
+                            <button class="btn btn-red">подать заявку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-grid-block">
+                    <div class="grid-img-block sleep-pad">
+                        <img src="assets/image/news/image51.png" alt="">
+                    </div>
+                    <div class="grid-block grid-block-area">
+                        <h3>Акция: <br>Скидка 20% на второй заезд!</h3>
+                        <p>Хотите больше драйва? Только в этом месяце – при покупке одного заезда, второй получаете со
+                            скидкой 20%! Отличный шанс
+                            прокатиться дважды и побить свой рекорд.</p>
+                        <div class="grid-links">
+                            <div class="grid-data">
+                                <img src="assets/image/news/calendar.png" alt="">
+                                <p>28 февраля 2025</p>
+                            </div>
+                            <button class="btn btn-red">участвовать</button>
+                        </div>
+                    </div>
+                    <div class="grid-img-block sleep-pad">
+                        <img src="assets/image/news/image52.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="all_news">Все новости</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- maps -->
+    <div class="maps">
+        <div class="container">
+            <div class="maps-text-block">
+                <h3>Контактная информация</h3>
+                <div class="other-text-block">
+                    <img src="assets/image/maps/phone.png" alt="">
+                    <a href="tel:+79236230252">+7 923 623 02 52</a>
+                </div>
+                <div class="other-text-block">
+                    <img src="assets/image/maps/mail.png" alt="">
+                    <a href="mailto:zanos@yandex.ru">zanos@yandex.ru</a>
+                </div>
+                <div class="other-text-block">
+                    <img src="assets/image/maps/location.png" alt="">
+                    <a href="">г. Казань, ул. Проспект Победы 84</a>
+                </div>
+                <div class="other-text-block">
+                    <img src="assets/image/maps/clock.png" alt="">
+                    <a href="">Ежедневно с 10:00 до 22:00</a>
+                </div>
+            </div>
+            <img src="assets/image/maps/map.png" alt="" class="map">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="main-footer-block">
+                <a href="index.html"><img src="assets/image/footer/лого.png" alt=""></a>
+                <nav class="footer-menu">
+                    <a href="index.html">главная</a>
+                    <a href="#review">отзывы</a>
+                    <a href="catalog.html">каталог</a>
+                    <a href="#preim">о нас</a>
+                </nav>
+                <div class="footer-links">
+                    <a href="https://web.telegram.org/a/" target="_blank"><img src="assets/image/footer/telegram.png"
+                            alt=""></a>
+                    <a href="https://vk.com/?u=2&to=L2luZGV4LnBocA--" target="_blank"><img
+                            src="assets/image/footer/vk2.png" alt=""></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="assets/image/footer/youtoobe.png"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="other-footer-block">
+                <a href="assets/пользоватеьское соглашение.docx" download>Политика конфинденциальности</a>
+                <a href="https://t.me/n0vv1ik" target="_blank">©Новиков Александр</a>
+                <a href="https://www.consultant.ru/document/cons_doc_LAW_10699/5c337673c261a026c476d578035ce68a0ae86da0/"
+                    target="_blank">Все права защищены</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    let index = 0;
+    const slides = document.querySelectorAll('input[name="r"]');
+
+    function nextSlide() {
+        slides[index].checked = false;
+        index = (index + 1) % slides.length;
+        slides[index].checked = true;
+    }
+
+    setInterval(nextSlide, 5000);
+</script>
