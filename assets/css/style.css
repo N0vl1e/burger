@@ -1335,23 +1335,6 @@ input[type="password"] {
         justify-content: inherit;
     }
 
-    /* .filter {
-        gap: 10px;
-        margin: 25px 0 40px;
-        background: transparent;
-    }
-
-    .btn-filter {
-        padding: 7px 25px;
-        font-size: 20px;
-        font-family: "Raleway", sans-serif;
-        font-weight: 600;
-        background: rgba(255, 255, 255, 0.9);
-        color: black;
-        border-radius: 15px;
-        border-color: transparent;
-    } */
-
     .catalog .btn {
         width: 210px;
         height: 40px;
@@ -1385,6 +1368,11 @@ input[type="password"] {
         gap: 5px;
     }
 
+    .c-block-text img {
+        width: 30px;
+        height: 30px;
+    }
+
     .other-btn {
         padding: 10px 45px;
         font-size: 18px;
@@ -1402,7 +1390,7 @@ input[type="password"] {
     .review-block {
         margin-top: 65px;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .review-post-block img.right {
@@ -1419,7 +1407,7 @@ input[type="password"] {
 
     .r-block {
         padding: 80px 20px 50px;
-        width: 360px;
+        width: 340px;
         height: 330px;
     }
 
@@ -1460,7 +1448,8 @@ input[type="password"] {
     .review-post-block {
         display: flex;
         align-items: center;
-        gap: 45px;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .arrows {
@@ -1687,11 +1676,16 @@ input[type="password"] {
     }
 
     .footer-menu {
-        display: none;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .footer-menu a {
+        font-size: 18px;
     }
 
     .footer-links {
-        gap: 20px;
+        gap: 15px;
     }
 
     .footer-links img {
@@ -1762,9 +1756,12 @@ input[type="password"] {
 
     .burger {
         display: block;
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
+    }
 
+    .burger input[type="checkbox"] {
+        visibility: hidden;
     }
 
     .burger #burger,
@@ -1773,12 +1770,12 @@ input[type="password"] {
     }
 
     .burger [for=burger] {
-        position: fixed;
-        top: 20px;
-        right: 20px;
+        position: absolute;
+        top: 45px;
+        right: 30px;
         width: 30px;
         cursor: pointer;
-        z-index: 3;
+        z-index: 5;
     }
 
     .burger span {
@@ -1795,15 +1792,15 @@ input[type="password"] {
         position: absolute;
         width: 100%;
         height: 3px;
-        background: black;
+        background: white;
     }
 
     .burger span::before {
-        top: -8px;
+        top: -10px;
     }
 
     .burger span::after {
-        top: 8px;
+        top: 10px;
     }
 
     .burger nav {
@@ -1815,6 +1812,7 @@ input[type="password"] {
         background: #f4f4f4;
         padding-top: 60px;
         transition: 0.5s;
+        z-index: 5;
     }
 
     .burger nav a {
@@ -1847,12 +1845,8 @@ input[type="password"] {
         top: 0;
     }
 
-    .burger input[type="checkbox"]{
-        display: none;
-    }
-
-     /* banner */
-     .slider {
+    /* banner */
+    .slider {
         width: 100%;
         height: 260px;
     }
@@ -1882,7 +1876,7 @@ input[type="password"] {
 
     /* preim */
     .preim {
-        padding: 20px 0;
+        padding: 30px 0;
     }
 
     .preim .container {
@@ -1908,9 +1902,9 @@ input[type="password"] {
         font-size: 28px;
     }
 
-     /* catalog */
-     .catalog {
-        padding: 0 0 40px;
+    /* catalog */
+    .catalog {
+        padding: 0 0 30px;
     }
 
     .catalog .container {
@@ -1923,16 +1917,17 @@ input[type="password"] {
     }
 
     .catalog-block {
-        gap: 70px;
+        gap: 40px;
         justify-content: inherit;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
+
     .catalog .btn {
         width: 140px;
         height: 30px;
-        font-size: 20px;
+        font-size: 18px;
         padding: 4px 20px;
         border-radius: 15px 0 0 15px;
         margin-right: -12px;
@@ -1947,7 +1942,7 @@ input[type="password"] {
         max-width: 265px;
     }
 
-    .c-block{
+    .c-block {
         width: 265px;
     }
 
@@ -1972,5 +1967,305 @@ input[type="password"] {
         width: 265px;
     }
 
-    
+    /* review */
+    .review {
+        padding: 30px 0;
+    }
+
+    .review .container {
+        gap: 12px;
+    }
+
+    .review-block {
+        margin-top: 65px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .r-block {
+        padding: 80px 20px 50px;
+        width: 360px;
+        height: 330px;
+    }
+
+    .r-block h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        top: -40px;
+        left: 115px;
+        z-index: 2;
+    }
+
+    .avatar img {
+        padding: 16px 16px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .stars {
+        display: flex;
+        align-items: center;
+        gap: -1px;
+        background: transparent;
+        margin-bottom: 19px;
+    }
+
+    .review .btn {
+        width: 230px;
+        height: 40px;
+        padding: 7px 32px;
+        font-size: 20px;
+    }
+
+    .review-post-block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .arrows {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .arrows img {
+        width: 30px;
+    }
+
+    /* subscribe */
+    .subscribe {
+        padding: 30px 0;
+    }
+
+    .subscribe .container {
+        padding: 50px 40px;
+        background: linear-gradient(rgba(0, 0, 0, 0.001),
+                rgba(0, 0, 0, 0.00001)),
+            url(../image/subscribe/image50.png) fixed center;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        border: 2px solid white;
+    }
+
+    .subscribe .container h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .subscribe-block {
+        margin-bottom: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-block input[type="text"] {
+        background: white;
+        border-radius: 15px;
+        border-color: transparent;
+        width: 230px;
+        height: 45px;
+        padding: 12px 20px;
+    }
+
+    .subscribe-block input::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+        background: transparent;
+    }
+
+    .subscribe-block input[type="text"]+input[type="text"] {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .subscribe-block input[type="submit"] {
+        width: 230px;
+        height: 45px;
+        padding: 10px 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        border-color: transparent;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .subscribe-block input[type="submit"]:hover {
+        cursor: pointer;
+        background: rgba(209, 0, 31, 0.6);
+    }
+
+    .subscribe-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: transparent;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* news */
+    .news {
+        padding: 30px 0;
+    }
+
+    .news-main-block {
+        gap: 12px;
+    }
+
+    .first-grid-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 300px;
+    }
+
+    .grid-block {
+        padding: 20px 15px;
+    }
+
+    .grid-block-area {
+        padding: 20px 15px;
+        max-width: 300px;
+    }
+
+    .grid-block h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .grid-block p {
+        font-size: 14px;
+        margin-bottom: 7px;
+        padding: 0;
+    }
+
+    .grid-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid-block .btn {
+        width: 200px;
+        height: 38px;
+        padding: 6px 36px;
+        font-size: 16px;
+    }
+
+    .second-grid-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 650px;
+    }
+
+    .all_news {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    /* maps */
+    .maps {
+        padding: 30px 0;
+    }
+
+    .maps .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .maps .container .map {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .maps .container h3 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .maps-text-block {
+        padding: 30px 30px;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .other-text-block {
+        gap: 12px;
+    }
+
+    .other-text-block a {
+        font-size: 16px;
+    }
+
+    .other-text-block img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .other-text-block+.other-text-block {
+        margin-top: 12px;
+    }
+
+    /* footer */
+    footer {
+        padding: 0 0 20px;
+    }
+
+    footer .container {
+        gap: 15px;
+        padding: 12px 20px;
+    }
+
+    .main-footer-block {
+        flex-direction: column;
+    }
+
+    .main-footer-block img {
+        width: 135px;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: white;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-menu a {
+        color: black;
+        font-size: 16px;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+
+    .footer-links img {
+        width: 35px;
+    }
+
+    .other-footer-block {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .other-footer-block a {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
 }
